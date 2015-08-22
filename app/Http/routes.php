@@ -14,3 +14,8 @@
 $app->get('/', function () use ($app) {
     return $app->welcome();
 });
+
+$app->get('/hello', function () use ($app) {
+    return view('hello', ['hello' => 'world']);
+});
+

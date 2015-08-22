@@ -81,6 +81,8 @@ $app->singleton(
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 
+$app->configure('twigbridge'); 
+$app->register('TwigBridge\ServiceProvider');
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
